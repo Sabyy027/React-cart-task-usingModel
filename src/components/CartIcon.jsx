@@ -1,4 +1,4 @@
-
+import '../App.css';
 import React from 'react';
 
 const CartIcon = ({ size = 24, color = '#2874f0' }) => (

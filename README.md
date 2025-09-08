@@ -21,10 +21,6 @@ This ReactJS application fetches product data from the Fake Store API and allows
 
 ## Getting Started
 
-### Prerequisites
-- Node.js 
-- npm
-
 ### Installation
 1. Clone the repository or download the source code.
 2. Install dependencies:

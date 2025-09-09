@@ -19,6 +19,7 @@ const ProductCard = ({ product, addToCart }) => {
         <button
           onClick={() => addToCart(product)}
           className="w-full bg-gradient-to-r from-[#2874f0] to-[#174ea6] text-white py-2 rounded-full font-bold shadow-lg hover:from-[#174ea6] hover:to-[#2874f0] transition-all duration-300 mt-auto focus:outline-none focus:ring-2 focus:ring-[#2874f0] animate-shadow-pulse"
+          style={{ cursor: 'pointer' }}
         >
           Add to Cart
         </button>

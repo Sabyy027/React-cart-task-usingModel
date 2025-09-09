@@ -24,7 +24,9 @@ const CartModal = ({ cartItems, closeModal, removeFromCart }) => {
         {/* Modal Header */}
         <div className="flex justify-between items-center p-6 border-b border-[#2874f0]/20">
           <h2 className="text-2xl font-extrabold text-[#2874f0] tracking-wide">Your Cart</h2>
-          <button onClick={closeModal} className="text-2xl font-bold text-[#2874f0] hover:text-[#ff6161] transition-colors duration-200">&times;</button>
+          <button onClick={closeModal} className="text-2xl font-bold text-[#2874f0] hover:text-[#ff6161] transition-colors duration-200" style={{ cursor: 'pointer' }}>
+            &times;
+          </button>
         </div>
 
         {/* Modal Body */}
@@ -44,9 +46,11 @@ const CartModal = ({ cartItems, closeModal, removeFromCart }) => {
                   </div>
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="bg-[#ff6161] text-white px-4 py-1 rounded-full shadow hover:bg-[#d32f2f] transition-all duration-200 font-semibold"
+                    className="text-gray-500 hover:text-red-500 text-xl font-bold px-2 py-1 rounded transition-colors duration-200 focus:outline-none"
+                    aria-label="Remove item"
+                    style={{ cursor: 'pointer' }}
                   >
-                    Remove
+                    &times;
                   </button>
                 </div>
               ))}
